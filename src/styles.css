@@ -1,21 +1,83 @@
+/* Resetting default browser styles */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.about, .services, .gallery {
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about h2, .services h2, .gallery h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.services ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.services ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
